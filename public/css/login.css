@@ -99,6 +99,7 @@ legend {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .misc-container > * {
@@ -114,4 +115,38 @@ legend {
   text-decoration: none;
   font-weight: bold;
   color: var(--clr-primary);
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.divider-left {
+  width: 100%;
+}
+
+.divider-content {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.divider-right {
+  width: 100%;
+}
+
+.oAuth-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.oAuth {
+  width: 30px;
+
 }
