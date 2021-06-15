@@ -1,0 +1,52 @@
+/* Necessary fonts from google font. */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap');
+
+/* Basic styling. */
+:root {
+  --dark-primary: hsl(222, 24%, 29%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* All Classes. */
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+.nav-link {
+  font-family: 'Indie Flower', Verdana, sans-serif;
+  text-decoration: none;
+  color: var(--dark-primary);
+  font-size: 2rem;
+  margin: 1em;
+}
+
+.introduction-container {
+  font-family: 'Architects Daughter', Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45vh;
+  color: white;
+}
+
+.introduction {
+  font-size: 2.5rem;
+}
+
+
