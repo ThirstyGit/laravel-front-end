@@ -104,14 +104,14 @@ legend {
   border: none;
   background-color: var(--clr-secondary);
   color: var(--clr-primary);
-  border: 3px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary);
   cursor: pointer;
   margin-bottom: 2.0rem;
   border-radius: 0.3rem;
 }
 
 .redirect-btn:hover {
-  border: 3px solid var(--clr-primary-hvr);
+  border: 2px solid var(--clr-primary-hvr);
   color: var(--clr-primary-hvr);
   
 }
