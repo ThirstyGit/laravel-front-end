@@ -4,10 +4,11 @@
 /* Basic styling. */
 :root {
   --clr-primary: hsl(174, 100%, 29%);
-  --clr-primary-hvr: hsl(182, 100%, 29%);
+  --clr-primary-hvr: hsl(174, 100%, 33%);
   --clr-secondary: hsl(0, 0%, 100%);
   --fnt-clr: hsl(0, 0%, 27%);
-  --gray-primary: hsl(0, 0%, 84%);
+  --gray-primary: hsl(0, 0%, 73%);
+  --gray-secondary: hsl(0, 0%, 77%);
 }
 
 * {
@@ -32,7 +33,7 @@ legend {
   text-align: center;
   margin-bottom: 1.2rem;
   padding-bottom: 0.7rem;
-  border-bottom: 1px solid rgb(197, 197, 197);
+  border-bottom: 1px solid var(--gray-secondary);
 }
 
 /* All Classes. */
@@ -71,14 +72,14 @@ legend {
   padding: 0.5rem;
   width: 100%;
   margin-bottom: 1.4rem;
-  border: 2px solid rgb(185, 185, 185);
+  border: 2px solid var(--gray-primary);
   outline: none;
   font-size: 1.2rem;
   letter-spacing: 0px;
   font-family: 'Roboto', sans-serif;
 }
 
-.btn {
+.auth-btn {
   width: 100%;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -87,12 +88,32 @@ legend {
   background-color: var(--clr-primary);
   color: var(--clr-secondary);
   cursor: pointer;
+  margin-bottom: 0.7rem;
+  border-radius: 0.3rem;
+}
+
+.auth-btn:hover {
+  background-color: var(--clr-primary-hvr);
+}
+
+.redirect-btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+  border: 3px solid var(--clr-primary);
+  cursor: pointer;
   margin-bottom: 2.0rem;
   border-radius: 0.3rem;
 }
 
-.btn:hover {
-  background-color: var(--clr-primary-hvr);
+.redirect-btn:hover {
+  border: 3px solid var(--clr-primary-hvr);
+  color: var(--clr-primary-hvr);
+  
 }
 
 .misc-container {
@@ -148,5 +169,4 @@ legend {
 
 .oAuth {
   width: 30px;
-
 }
